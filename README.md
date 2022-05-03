@@ -1,3 +1,4 @@
+**Currently down because Google Cloud transaction declined**
 # AngularOcrTl
 
 Y3T2_AI Mini-project about using Angular with Google Cloud Vision and Translate
