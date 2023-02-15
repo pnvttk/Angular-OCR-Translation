@@ -1,4 +1,6 @@
 **Currently down because Google Cloud transaction declined**
+[private repo](https://github.com/pnvttk/angular-ocr-tl)
+
 # AngularOcrTl
 
 Y3T2_AI Mini-project about using Angular with Google Cloud Vision and Translate
