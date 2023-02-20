@@ -13,6 +13,7 @@ export class AppComponent {
 
   constructor(private googleService: GoogleService) {
   }
+
   // preview
   img = "./assets/upload.jpg"
 
@@ -24,13 +25,13 @@ export class AppComponent {
   targetLanguage: string = ""
   translatedText: string = ""
 
-  lnList:{code:string,name:string,native:string}[] = languages
+  lnList: { code: string, name: string, native: string }[] = languages
 
-  onSelectFile(e:any){
-    if(e.target.files){
+  onSelectFile(e: any) {
+    if (e.target.files) {
       var reader = new FileReader();
       reader.readAsDataURL(e.target.files[0])
-      reader.onload = (event:any) => {
+      reader.onload = (event: any) => {
         this.img = event.target.result;
         this.base64 = reader.result!.toString().split(',')[1] as string
         // console.log(this.base64)
@@ -50,7 +51,7 @@ export class AppComponent {
           ]
         }
         //* get response from service
-        this.googleService.vision(model).subscribe((response:any)=>{
+        this.googleService.vision(model).subscribe((response: any) => {
           // console.log(response)
           this.inputText = response.responses[0].fullTextAnnotation.text
           // console.log(this.inputText)
@@ -60,7 +61,7 @@ export class AppComponent {
     }
   }
 
-  translate(){
+  translate() {
     console.log(this.targetLanguage)
     let model = {
       "q": [this.inputText],
@@ -68,7 +69,7 @@ export class AppComponent {
       "target": this.targetLanguage,
       "format": "text"
     }
-    this.googleService.translate(model).subscribe((response:any)=>{
+    this.googleService.translate(model).subscribe((response: any) => {
       this.translatedText = response.data.translations[0].translatedText
       console.log(this.translatedText)
 
