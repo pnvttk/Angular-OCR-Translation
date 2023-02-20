@@ -1,7 +1,7 @@
 **Currently down because Google Cloud transaction declined** \
-Deploy on ~~[Heroku](https://angular-ocr-tl.herokuapp.com/)~~ [Vercel](https://angular-ocr-translation-603lcrphk-pnvttk.vercel.app/)
+Deploy on ~~[Heroku](https://angular-ocr-tl.herokuapp.com/)~~, [Vercel](https://angular-ocr-translation-603lcrphk-pnvttk.vercel.app/)
 <br />
-[private repo](https://github.com/pnvttk/angular-ocr-tl)
+Develop on : [private repo](https://github.com/pnvttk/angular-ocr-tl)
 
 # AngularOcrTl
 
